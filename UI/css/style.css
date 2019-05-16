@@ -1,0 +1,502 @@
+* {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+
+        }
+        .text-area h3{
+            font-family: Montserrat;
+            color: #333333;
+            font-size: 38px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+        .text-area p{
+            color: #333333;
+            font-size: 20px;
+            font-weight: 600px;
+        }
+        .login-tab {
+            font-weight:normal;
+
+        }
+
+
+        body {
+            font-family: 'Lato', sans-serif;
+            overflow-x: hidden;
+           
+        }
+
+
+        .background{
+            background-image: url('../img/signup-car.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+        }
+        .margin{
+            margin-top: 5%;
+        }
+
+        header{
+            background-color: #24262B;
+            padding: 5px;
+            color:white;
+
+        }
+
+        header li{
+            display: inline;
+            padding: 10px;
+        }    
+
+
+        .navbar {
+            
+            background-color: #5A5D61;
+        	color: white;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.19);
+            font-weight: 1200px;
+
+        }
+       .main-nav ul {
+            color: white;
+            background-color: white;
+        	
+        	
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+            
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color:white;
+            padding-bottom: 10px;
+            font-weight: bold;
+            font-size: 13px;
+
+        }
+
+        .main-nav li {
+        	font-size: 13px;
+            line-height: 27px;
+            text-align: left;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+            font-weight: 100%;
+        }
+
+        .navbar-toggle {
+            float: right;
+            margin: 10px;
+            cursor: pointer;
+            color: red;
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+            position: relative;
+            left: 30px;
+            background:transparent;
+
+        }
+         .logo:hover,
+            .nav-links:hover {
+                color: red;
+                border-bottom: 1px solid red;
+
+            }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+                padding: 40px;
+
+
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+
+            }
+
+            .main-nav li {
+                margin: 0;
+
+
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            color: white;
+
+
+
+            }
+            .float{
+                float: right;
+            }
+
+
+            .logo {
+                margin-top: 0;
+            color: red;
+
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: red;
+            }
+        }
+
+.container {
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+label{
+    color: white;
+}
+
+#boxes {
+    margin-top: 20px;
+}
+#boxes .box {
+    float: left;/*to take the vertical pictures horizontal*/
+    width: 50%; 
+    text-align: center;
+    padding-left: -50px;
+    min-height: 70px;
+}
+#boxes .box img{
+    width: 150px;
+
+}
+
+
+#mute img{
+    display: inline;
+    width: 30%;
+    padding: 20px;
+}
+
+.form{
+  
+    background-color: rgba(0,0,0,0.6);
+    width: 80%;
+    height: 370px;
+    margin: 5% auto;
+
+}
+.form .head{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    color: white;
+}
+.form .head > div {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 55px;
+    cursor: pointer;
+}
+.form .head .signup > div:nth-child(1),.form .head> div:nth-child(2) {
+    background-color: red;
+    transition: all .3s ease-in-out;
+}
+.form .head .signup > div:nth-child(2) {
+    background :transparent !important;
+    transition: all .3s ease-in-out;
+}
+.form .body{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.form .body > div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition:all .3s ease-in-out;
+}
+
+.form .body .form-row{
+    position: relative;
+    left: 5%;
+    top: 20%;
+    width: 70%;
+}
+.resp{
+
+}
+.form .body .form-row input{
+    border:none;
+    outline: none;
+    width: 100%;
+    height: 1vh;
+    display: block;
+    margin: 10px;
+    margin-left: 15%;
+    position: relative;
+    bottom: 20px;
+    font-size: 18px;
+    text-indent: px;
+    box-shadow: 0, 4px, 8px rgba(0,0,0,0.19);
+}
+
+.form-row input::placeholder{
+    font-size: 15px;
+}
+.pass  {
+    border-top: 1px solid grey;
+    margin: 10px;
+    margin-left: 15%;
+    width: 100%;
+
+}
+.sign{
+    margin-top: -30px;
+    position: relative;
+    margin-left:-30px; 
+
+}
+
+.sign input{
+  height: 20px; 
+
+}
+
+p{
+    padding-top: 10px;
+    margin:0 auto;
+    color: white;
+}
+.form-row > i.fas {
+    position: relative;
+    top: 34px;
+    left: 12px;
+    font-size: 25px;
+    color: #11074e;
+
+}
+.form .body .form-row input:focus{
+    border-bottom: 2px solid red;
+    transition: all .3s ease-in-out;
+}
+.form .body .form-row button{
+    width: 100%;
+    border:none;
+    outline: none;
+    border-radius: 15px;
+    margin-left: 15%;
+    margin-top: 10px;
+    color: #fcfcfc;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 25px;
+    padding: 8px;
+
+}
+.form .body > div.login {
+    left: 0%;
+}
+.form .body > div.signup{
+    left: 100%;
+}
+.form .body.active > div.login{
+    left: -100%;
+}
+.form .body.active > div.signup{
+    left: 0%;
+}
+.signup input{
+    margin:-30px;
+}
+
+input{
+    border-radius: 25px;
+    border:none;
+    padding: 20px;
+    width: 50px;
+}
+
+.text-area{
+   font-size: 25px; 
+   margin-top: 10%;
+}
+.all{
+    background-color: red;
+    color: blue;
+}
+
+
+@media(max-width: 768px){
+    header{
+        border-bottom: red 3px solid;
+    }
+    #newsletter {
+        float: none;
+        padding: 5px;
+
+    }
+    #newsletter h2{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 18px;
+        margin-left:25px;
+    }
+    #newsletter form{
+        margin-top: -35px;
+        padding: 20px;
+        width: 120%;
+    }
+    #newsletter input{
+        width:120%;
+        margin-bottom: 5px;
+    }
+    #newsletter button{
+        width: 120%;
+    }
+
+    #boxes .box{
+        width: 100%;
+        float: none;
+        text-align: center;
+
+    }
+    header{
+        display: none;
+    }
+}
+
+footer {        
+    background-color: #3D3D3D;            
+    background-size: cover;
+    color: #fff;
+    font-family: open-sans;
+    text-align: center;
+    padding: 15px 10px 15px;
+    min-height: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.19);
+
+}
+.footer {
+    background: linear-gradient(rgba(8,9,10,0.55), rgba(8,9,10,0.55)),
+    rgba(8,9,10,0.55) url('../img/car2.jpg') no-repeat center;           
+    background-color: #3D3D3D;            
+    background-size: cover;
+    color: #fff;
+    font-family: open-sans;
+    text-align: center;
+    padding: 15px 10px 15px;
+    min-height: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.19);
+
+}
+.about-content  {
+    font-family: lato;
+    padding: 10px;
+    text-align: left;
+}
+.address {
+    padding: 10px;
+    text-align: left;
+    line-height: 25px;
+
+}
+.address li{
+    list-style-type: none;
+}
+
+.usefull-link li{
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
+    line-height: 25px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid grey;
+     font-family: lato;
+
+}
+.usefull-link li a{
+  text-decoration: none;
+    color: white;
+}
+.recent-post{
+     font-family: lato;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    line-height: 22px;
+
+
+}
+.recent-post-info{
+    border-bottom: 1px solid grey;
+
+}
+.text-white{
+    font-family: lato;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(to right, red, red) no-repeat;
+    background-size: 10% 3px;
+    background-position: left bottom;
+}
+.news-letter{
+    font-family: lato;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    border:none;
+}
+.copyright{
+    background-color: black;
+    height: 10vh;
+    text-align: center;
+
+}
+
